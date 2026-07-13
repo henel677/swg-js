@@ -33,7 +33,7 @@ export interface Message {
 
 /** Constructor for a message that carries information relating to RRM. */
 interface MessageConstructor {
-  new(data?: unknown[], includesLabel?: boolean): Message;
+  new (data?: unknown[], includesLabel?: boolean): Message;
 }
 
 /** */
@@ -2620,7 +2620,7 @@ export class ViewSubscriptionsResponse implements Message {
   }
 }
 
-const PROTO_MAP: { [key: string]: MessageConstructor } = {
+const PROTO_MAP: {[key: string]: MessageConstructor} = {
   'AccountCreationRequest': AccountCreationRequest,
   'ActionRequest': ActionRequest,
   'AlreadySubscribedResponse': AlreadySubscribedResponse,
